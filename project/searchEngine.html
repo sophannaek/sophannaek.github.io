@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Engine GUI Application</title>
+    <meta charset="UTF-8">
+    <!-- tell what internet explorer version this website support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <style>
+      body{background-color:#F8F8F2;}
+      .date-caption{font-size: 10px;color:gray;}
+      .project-title{font-size:24px;font-family: 'Quicksand', sans-serif;padding:3em 0em 2em 0em;}
+      .center{text-align:center;}
+	  .project-step{font-size:20px;color:#581845;}
+	  .head{border-bottom: 1px solid #581845 ;}
+	  .head a{color: black;}
+	  h3 {
+		  letter-spacing: 5px;
+		  text-transform: uppercase;
+		  font: 20px "Lato", sans-serif;
+		  color: #111;
+		}
+		h5{font-weight:600;}
+      </style>
+  </head>
+  <body>
+  <div class="head">
+	  <nav class="navbar fixed-bottom navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="../portfolio.html" id="brand">SOPHANNA EK</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">ABOUT</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="../portfolio.html">PORTFOLIO <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../portfolio.html">APPLICATION</a></li>
+							<li><a href="#">CHEMICAL ENGINEERING</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact.html">CONTACT</a></li>
+					<li><a href="../blog.html" target="blank">BLOG</a></li>
+				</ul>
+			  </div>
+			</nav>
+  </div>
+  
+    <div class="container">
+      <p class="project-title center">GUI Application: Search Engine</p>
+	  <p class="center" style="margin-top:-3em;"> Class Project</p>
+      <p class="date-caption center">September 2019 - Present | Long Beach, CA </p>
+      <h3>OVERVIEW</h3>
+      <p>Search Engine is a Java GUI application where users can search for the phrase query they've entered. The user can select the corpus they would like to search for their queries. </p>
+
+      <h3>INTRODUCTION</h3>
+	  <p>
+      This search engine is an on-going project. It currently reads all the content of each document in the selected corpus and index those words into the index. The index is currently processed on RAM only, but it will be implemented into disk in the future, so the index building process should occurs only once.  
+      </p>
+
+      <h3>IMPLEMENTATION</h3>
+      <h6>Tools: Eclipse IDE, org.simple Library, Command line</h6>
+      <h6>Language: Java</h6>
+	  
+      <p class="project-step">Work flow of our current search engine data structure</p>
+      <h4><span style="color:red"> This project is still in progress</span></h4>
+    
+     </div>
+  </body>
+  </html>

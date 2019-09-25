@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POS</title>
+    <meta charset="UTF-8">
+    <!-- tell what internet explorer version this website support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <style>
+      body{background-color:#F8F8F2;}
+      .date-caption{font-size: 10px;color:gray;}
+      .project-title{font-size:24px;font-family: 'Quicksand', sans-serif;padding:3em 0em 2em 0em;}
+      .center{text-align:center;}
+	  .project-step{font-size:20px;color:#581845;}
+	  .head{border-bottom: 1px solid #581845 ;}
+	  .head a{color: black;}
+	  h3 {
+		  letter-spacing: 5px;
+		  text-transform: uppercase;
+		  font: 20px "Lato", sans-serif;
+		  color: #111;
+		}
+		h5{font-weight:600;}
+      </style>
+  </head>
+  <body>
+	 <div class="head">
+	  <nav class="navbar fixed-bottom navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="../portfolio.html" id="brand">SOPHANNA EK</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">ABOUT</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="../portfolio.html">PORTFOLIO <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../portfolio.html">APPLICATION</a></li>
+							<li><a href="#">CHEMICAL ENGINEERING</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact.html">CONTACT</a></li>
+					<li><a href="../blog.html" target="blank">BLOG</a></li>
+				</ul>
+			  </div>
+			</nav>
+  </div>
+  
+    <div class="container">
+      <p class="project-title center">GUI Application: POS - Point of Sale Application</p>
+	  <p class='center'>Class Project | Spring 2018</p>
+      <p class="date-caption center">Feb-May 2018 | Long Beach, CA </p>
+      <p>image of the final product here ! </p>
+      <h3>OVERVIEW</h3>
+      <p>POS: point of sale is a Java GUI application to help streamline restaurant procedures such as tracking inventory, processing trasactions, adding menu items, and tracking hours worked by employees. Employees will have the ability to process transactions through the sales interface and will also be able to clock in and out of work from the time clock interface. Managers will be able to view, add and update food inventory through the inventory interface. They also will be able to add and update employee information through the control panel interface. 
+	  For full documentation and source code, please visit <a href="https://github.com/sophannaek?tab=overview&from=2019-04-01&to=2019-04-30">github</a>.</p>
+
+      <h3>DESIGN PROCESS </h3>
+      <ol>
+        <li><h5>Prototyping:</h5>
+          <p>For this project, we decided to use Java as our main programming language because we all know Java; therefore, the Java GUI is used for the main interface. The UI design was really simple for POS. All was designed using GUI in eclipse IDE.</p>
+         </li>
+		 <li><h5>The Back-end Design </h5></li>
+		 <p>The hard part of this project was the ability to authenticate user credentials using data from the database. We decided not to use the array, but the database to store the registered credentials as it seems to be more realistic to real life applications.
+		  </p>
+		  <p>There are three main interfaces: a login screen, an employee and manager control panels. </p>
+        
+		<li><h5>Flowchart: Process of the Diplomacy Game Logic</h5></li>
+		<center><img src="../images/POS-flowchart.png" width="80%" height="70%"/></center><br/>
+      </ol>
+
+      <h3>IMPLEMENTATION</h3>
+      <h6><span style='font-size:18px'>Tools:</span> Java GUI, MySQL Workbench, Eclipse IDE</h6>
+      <h6><span style='font-size:18px'>Language:</span> Java and SQL</h6>
+
+      <p class="project-step">Login Screen</p>
+      <p>The login screen allows users to enter their credentials and access  control panels: employee and manager interfaces.</p>
+	 <center><img src="../images/POS-login.png" width="80%" height="70%"/></center><br/>
+	  
+      <p class="project-step">Manager Interface</p>
+      <p>This control panel consist of four components: inventory panel, control panel, time clock and the sales component.  </p>
+	  <center><img src="../images/POS-admin-panel.png" width="80%" height="70%"/></center><br/>
+	  <p class="project-step">Inventory Panel</p>
+	  <p>This control panel consists of four subpanels: add, update, delete, report inventory.</p>
+		<img src="../images/POS-add-panel.png" width="50%" /><img src="../images/POS-update.png" width="50%" /><br/><br/>
+		<img src="../images/POS-delete.png" width="50%" /><img src="../images/POS-inventory-panel.png" width="50%" /><br/><br/>
+	  
+	  <p class="project-step">Employee Interface</p>
+	  <p> This interface has two components: time clock and sales components. The sales component has not been implemented yet. </p>
+		<center><img src="../images/POS-timeclock.png" width="80%" height="70%"/></center><br/>
+	   
+    
+	  
+     </div>
+  </body>
+  </html>
