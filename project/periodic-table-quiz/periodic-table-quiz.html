@@ -1,0 +1,256 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>periodic table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+		#game-display{display:none}
+		#give_up, #try_again{ display:none}
+		body{text-align:center}
+		#p-table{display:none}
+		.metal{
+			background-color:#BCF5A9 ;
+		}
+		.metalloid{
+			background-color:#CEF6E3 ;
+		}
+		.alkaliMetal{
+			background-color:#F6CED8;
+		}
+		.alkaline{
+			background-color:#E0E6F8;
+		}
+		.transitionMetal{
+			background-color:#CEE3F6 ;
+		}
+		.nonmetal, .halogen{
+			background-color:lightyellow;
+		}
+		.noblegas{
+			background-color:#F6E3CE;
+		}
+		.lanthanoid{
+			
+			background-color:#A9F5F2;
+		}
+		.actinoid{
+			background-color:#ABE5D3 ;
+		}
+		.btn{
+			border-radius:5px;
+			width:40px;
+			height:35px;
+			border:1px solid lightgray;
+	
+		}
+		.element{
+			border:2px solid gray;
+		}
+	
+	</style>
+  </head>
+  <body>
+  <h4>See How Well You Know the Periodic Table</h4>
+	<center>  <fieldset>
+        <legend>Choose the quiz options:</legend>
+        
+        <p>
+            <select id="game-option" name="scripts">
+                <option value="atomic_number">Find Atomic Number</option>
+                <option value="elementSymbol">Do You Know All Element Symbols</option>                
+            </select>
+             <button type="button" id="play" value="play" >Play</button>
+        </p>
+    </fieldset></center>
+	<center>
+	<div id='game-display'>
+		<p>SCORE: <span id='score'></span> </p><br/>
+		<div id='game-heading'></div>
+		<p>	<span id='fb' style='color:red'></span></p>
+		<input type='number' value='' id='input_ans'/>
+		<button type='button' id='ans_btn'>submit</button> 
+		<p><button type='button' id='give_up'>give up</button> <button type='button' id='quit'>quit</button> </p>
+		<div id='element-info'>
+		</div>
+		
+		<button type='button' id='try_again'>Try Again</button> 
+	  </div>
+	 </center>
+	  <div id='quit-message'></div>
+	  <br/>
+	  <div id="p-table">
+		<center>
+			<table class="element">
+				<tr>
+					<td><button type="button" class="btn nonmetal"  value="1" id="h">H</button><span id="pop"></span></td>
+					<td colspan="16"></td>
+					<td><button type="button" class="btn noblegas" value="2" id='he'>He</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn alkaliMetal" value="3" id='li' >Li</button></td>
+					<td><button type="button" class="btn alkaline" value="4" id='be'>Be</button></td>
+					<td colspan="10" ></td>
+					<td><button type="button" class="btn metalloid" value="5" id='b'>B</button></td>
+					<td><button type="button" class="btn nonmetal" value="6" id='c'>C</button></td>
+					<td><button type="button" class="btn nonmetal" value="7" id='n'>N</button></td>
+					<td><button type="button" class="btn nonmetal" value="8" id='o'>O</button></td>
+					<td><button type="button" class="btn nonmetal" value="9" id='f'>F</button></td>
+					<td><button type="button" class="btn noblegas" value="10" id='ne'>Ne</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn alkaliMetal" value="11" id='Na'>Na</button></td>
+					<td><button type="button" class="btn alkaline" value="12" id='Mg'>Mg</button></td>
+					<td colspan="10"></td>
+					<td><button type="button" class="btn metal" value="13" id='Al'>Al</button></td>
+					<td><button type="button" class="btn metalloid" value="14" id='Si'>Si</button></td>
+					<td><button type="button" class="btn nonmetal" value="15" id='P'>P</button></td>
+					<td><button type="button" class="btn nonmetal" value="16" id='S'>S</button></td>
+					<td><button type="button" class="btn nonmetal" value="17" id='Cl'>Cl</button></td>
+					<td><button type="button" class="btn noblegas" value="18" id='Ar'>Ar</button></td>
+				</tr>
+				
+				<tr>
+					<td><button type="button" class="btn alkaliMetal" value="19" id='K'>K</button></td>
+					<td><button type="button" class="btn alkaline" value="20" id='Ca'>Ca</button></td>
+					<td><button type="button" class="btn transitionMetal" value="21" id='Sc'>Sc</button></td>
+					<td><button type="button" class="btn transitionMetal" value="22" id='Ti'>Ti</button></td>
+					<td><button type="button" class="btn transitionMetal" value="23" id='V'>V</button></td>
+					<td><button type="button" class="btn transitionMetal" value="24" id='Cr'>Cr</button></td>
+					<td><button type="button" class="btn transitionMetal" value="25" id='Mn'>Mn</button></td>
+					<td><button type="button" class="btn transitionMetal" value="26" id='Fe'>Fe</button></td>
+
+					<td><button type="button" class="btn transitionMetal" value="27" id='Co'>Co</button></td>
+					<td><button type="button" class="btn transitionMetal" value="28" id='Ni'>Ni</button></td>
+					<td><button type="button" class="btn transitionMetal" value="29" id='Cu'>Cu</button></td>
+					<td><button type="button" class="btn transitionMetal" value="30" id='Zn'>Zn</button></td>
+					<td><button type="button" class="btn metal" value="31" id='Ga'>Ga</button></td>
+					<td><button type="button" class="btn metalloid" value="32" id='Ge'>Ge</button></td>
+					<td><button type="button" class="btn metalloid" value="33" id='As'>As</button></td>
+					<td><button type="button" class="btn nonmetal" value="34" id='Se'>Se</button></td>
+					<td><button type="button" class="btn nonmetal" value="35" id='Br'>Br</button></td>
+					<td><button type="button" class="btn noblegas" value="36" id='Kr'>Kr</button></td>
+		
+				</tr>
+				<tr>
+					<td><button type="button" class="btn alkaliMetal" value="37" id='Rb'>Rb</button></td>
+					<td><button type="button" class="btn alkaline" value="38" id='Sr'>Sr</button></td>
+					<td><button type="button" class="btn transitionMetal" value="39" id='Y'>Y</button></td>
+					<td><button type="button" class="btn transitionMetal" value="40" id='Zr'>Zr</button></td>
+					<td><button type="button" class="btn transitionMetal" value="41" id='Nb'>Nb</button></td>
+					<td><button type="button" class="btn transitionMetal" value="42" id='Mo'>Mo</button></td>
+					<td><button type="button" class="btn transitionMetal" value="43" id='Tc'>Tc</button></td>
+					<td><button type="button" class="btn transitionMetal" value="44" id='Ru'>Ru</button></td>
+
+					<td><button type="button" class="btn transitionMetal" value="45" id='Rh'>Rh</button></td>
+					<td><button type="button" class="btn transitionMetal" value="46" id='Pd'>Pd</button></td>
+					<td><button type="button" class="btn transitionMetal" value="47" id='Ag'>Ag</button></td>
+					<td><button type="button" class="btn transitionMetal" value="48" id='Cd'>Cd</button></td>
+					<td><button type="button" class="btn metal" value="49" id='In'>In</button></td>
+					<td><button type="button" class="btn metal" value="50" id='Sn'>Sn</button></td>
+					<td><button type="button" class="btn metalloid" value="51" id='Sb'>Sb</button></td>
+					<td><button type="button" class="btn metalloid" value="52" id='Te'>Te</button></td>
+					<td><button type="button" class="btn nonmetal" value="53" id='I'>I</button></td>
+					<td><button type="button" class="btn noblegas" value="54" id='Xe'>Xe</button></td>
+				</tr>
+				<tr>
+					
+					<td><button type="button" class="btn alkaliMetal" value="55" id='Cs'>Cs</button></td>
+					<td><button type="button" class="btn alkaline" value="56" id='Ba'>Ba</button></td>
+					<td style='text-align: center'>*</td>
+
+
+
+					
+					<td><button type="button" class="btn transitionMetal" value="72" id='Hf'>Hf</button></td>
+					<td><button type="button" class="btn transitionMetal" value="73" id='Ta'>Ta</button></td>
+					<td><button type="button" class="btn transitionMetal" value="74" id='W'>W</button></td>
+					<td><button type="button" class="btn transitionMetal" value="75" id='Re'>Re</button></td>
+					<td><button type="button" class="btn transitionMetal" value="76" id='Os'>Os</button></td>
+					<td><button type="button" class="btn transitionMetal" value="77" id='Ir'>Ir</button></td>
+					<td><button type="button" class="btn transitionMetal" value="78" id='Pt'>Pt</button></td>
+					<td><button type="button" class="btn transitionMetal" value="79" id='Au'>Au</button></td>
+					<td><button type="button" class="btn transitionMetal" value="80" id='Hg'>Hg</button></td>
+					<td><button type="button" class="btn metal" value="81" id='Tl'>Tl</button></td>
+					<td><button type="button" class="btn metal" value="82" id='Pb'>Pb</button></td>
+					<td><button type="button" class="btn metal" value="83" id='Bi'>Bi</button></td>
+					<td><button type="button" class="btn metalloid" value="84" id='Po'>Po</button></td>
+					<td><button type="button" class="btn nonmetal" value="85" id='At'>At</button></td>
+					<td><button type="button" class="btn noblegas" value="86" id='Rn'>Rn</button></td>
+			
+				</tr>
+				
+				<tr>
+					
+					<td><button type="button" class="btn alkaliMetal" value="87" id='Fr'>Fr</button></td>
+					<td><button type="button" class="btn alkaline" value="88" id='Ra'>Ra</button></td>
+					<td style='text-align: center'>**</td>
+					
+					<td><button type="button" class="btn transitionMetal" value="104" id='Rf'>Rf</button></td>
+					<td><button type="button" class="btn transitionMetal" value="105" id='Db'>Db</button></td>
+					<td><button type="button" class="btn transitionMetal" value="106" id='Sg'>Sg</button></td>
+					<td><button type="button" class="btn transitionMetal" value="107" id='Bh'>Bh</button></td>
+					<td><button type="button" class="btn transitionMetal" value="108" id='Hs'>Hs</button></td>
+					<td><button type="button" class="btn transitionMetal" value="109" id='Mt'>Mt</button></td>
+					<td><button type="button" class="btn transitionMetal" value="110" id='Ds'>Ds</button></td>
+					<td><button type="button" class="btn transitionMetal" value="111" id='Rg'>Rg</button></td>
+					<td><button type="button" class="btn transitionMetal" value="112" id='Cn'>Cn</button></td>
+					<td><button type="button" class="btn metal" value="113" id='Nh'>Nh</button></td>
+					<td><button type="button" class="btn metal" value="114" id='Fl'>Fl</button></td>
+					<td><button type="button" class="btn metal" value="115" id='Mc'>Mc</button></td>
+					<td><button type="button" class="btn metal" value="116" id='Lv'>Lv</button></td>
+					<td><button type="button" class="btn nonmetal" value="117" id='Ts'>Ts</button></td>
+					<td><button type="button" class="btn noblegas" value="118" id='Og'>Og</button></td>
+			
+				</tr>
+			
+				<tr>
+					<td></td>
+					<td colspan="2"><span style="color:darkblue">* Lanthanides</span></td>
+					<td><button type="button" class="btn lanthanoid" value="57" id='La'>La</button></td>
+					<td><button type="button" class="btn lanthanoid" value="58" id='Ce'>Ce</button></td>
+					<td><button type="button" class="btn lanthanoid" value="59" id='Pr'>Pr</button></td>
+					<td><button type="button" class="btn lanthanoid" value="60" id='Nd'>Nd</button></td>
+					<td><button type="button" class="btn lanthanoid" value="61" id='Pm'>Pm</button></td>
+					<td><button type="button" class="btn lanthanoid" value="62" id='Sm'>Sm</button></td>
+					<td><button type="button" class="btn lanthanoid" value="63" id='Eu'>Eu</button></td>
+					<td><button type="button" class="btn lanthanoid" value="64" id='Gd'>Gd</button></td>
+					<td><button type="button" class="btn lanthanoid" value="65" id='Tb'>Tb</button></td>
+					<td><button type="button" class="btn lanthanoid" value="66" id='Dy'>Dy</button></td>
+					<td><button type="button" class="btn lanthanoid" value="67" id='Ho'>Ho</button></td>
+					<td><button type="button" class="btn lanthanoid" value="68" id='Er'>Er</button></td>
+					<td><button type="button" class="btn lanthanoid" value="69" id='Tm'>Tm</button></td>
+					<td><button type="button" class="btn lanthanoid" value="70" id='Yb'>Yb</button></td>
+					<td><button type="button" class="btn lanthanoid" value="71" id='Lu'>Lu</button></td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td colspan="2"><span style="color:darkblue">** Actinides</span></td>
+					<td><button type="button" class="btn actinoid" value="89" id='Ac'>Ac</button></td>
+					<td><button type="button" class="btn actinoid" value="90" id='Th'>Th</button></td>
+					<td><button type="button" class="btn actinoid" value="91" id='Pa'>Pa</button></td>
+					<td><button type="button" class="btn actinoid" value="92" id='U'>U</button></td>
+					<td><button type="button" class="btn actinoid" value="93" id='Np'>Np</button></td>
+					<td><button type="button" class="btn actinoid" value="94" id='Pu'>Pu</button></td>
+					<td><button type="button" class="btn actinoid" value="95" id='Am'>Am</button></td>
+					<td><button type="button" class="btn actinoid" value="96" id='Cm'>Cm</button></td>
+					<td><button type="button" class="btn actinoid" value="97" id='Bk'>Bk</button></td>
+					<td><button type="button" class="btn actinoid" value="98" id='Cf'>Cf</button></td>
+					<td><button type="button" class="btn actinoid" value="99" id='Es'>Es</button></td>
+					<td><button type="button" class="btn actinoid" value="100" id='Fm'>Fm</button></td>
+					<td><button type="button" class="btn actinoid" value="101" id='Md'>Md</button></td>
+					<td><button type="button" class="btn actinoid" value="102" id='No'>No</button></td>
+					<td><button type="button" class="btn actinoid" value="103" id='Lr'>Lr</button></td>
+				</tr>
+				
+				</table>
+				</center>
+		</div>
+		
+	  
+	  
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>

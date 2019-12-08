@@ -1,0 +1,80 @@
+body{
+	text-align:center;
+}
+#entry {
+	margin: 2em 1em;
+}
+#location {
+	margin: 1em;
+}
+.card-title{
+	background-color: lightgray;
+	text-align:center;
+}
+#card{
+	border:1px solid black; 
+	padding:2px 3px;
+	width:200px; height:200px;
+	text-align:center;
+	}
+#atomicNumber, #name, #symbol, #symbolBlock{
+	font-weight:bold
+}
+#symbolBlock{
+	font-size:2.5em; 
+	padding:0px 0px
+}
+#right{ 
+	text-align:left;
+	padding-left:2em;
+}
+
+.p-tag{
+	border-bottom:1px solid lightgray;
+}
+#left-div{
+	border:1px solid black; 
+	padding:2px 3px;
+	width:70px; height:70px;
+	text-align:center;
+	text-align:center;
+}
+#right-div{
+	text-align:left; padding-left:2em;
+}
+.fullList{
+	margin-bottom:1em;
+	margin-left:1em;
+	border-bottom: 1px solid lightgray;
+}
+tr.tb_row td,th{
+	border-bottom: 1px solid lightgray;
+}
+.metal{
+	background-color:#BCF5A9 ;
+}
+.metalloid{
+	background-color:#CEF6E3 ;
+}
+.alkaliMetal{
+	background-color:#F6CED8;
+}
+.alkaline{
+	background-color:#E0E6F8;
+}
+.transitionMetal{
+	background-color:#CEE3F6 ;
+}
+.nonmetal, .halogen{
+	background-color:lightyellow;
+}
+.noblegas{
+	background-color:#F6E3CE;
+}
+.lanthanoid{
+	
+	background-color:#A9F5F2;
+}
+.actinoid{
+	background-color:#ABE5D3 ;
+}

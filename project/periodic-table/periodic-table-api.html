@@ -1,0 +1,33 @@
+<!-- should make a pop up window for each element info 
+	https://web.cortland.edu/flteach/mm-course/glossPopupDiv.html
+	
+	make it similar to https://pubchem.ncbi.nlm.nih.gov/periodic-table/
+--> 
+<!-- display chemical element information --> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>periodic table</title>
+    <link rel='stylesheet' type='text/css' href='main.css'/>
+  </head>
+  <body>
+	<h3>Enter an element symbol to find its information</h3>
+	
+    <div id="entry">
+      Element: <input id="elementSymbol" type="text" name="elementSymbol" />
+	 <button id="ajax-button" type="button">Submit</button> 
+    </div>
+
+	<p id="error" style="color:red"></p>
+	<center><div id='display' ></div></center>
+	
+	<p><button type="button"  id='showFull'>show all elements</button></p>
+	<center><div id='fullList'></div></center>
+		
+	
+	<script src='script.js'></script> 
+	
+	
+	
+	</html>
