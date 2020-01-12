@@ -1,0 +1,16 @@
+body{
+	background-color:#F8F8F2;
+}
+.date-caption{font-size: 10px;color:gray;}
+.project-title{font-size:24px;font-family: 'Quicksand', sans-serif;padding:3em 0em 2em 0em;}
+.center{text-align:center;}
+.project-step{font-size:20px;color:#581845;}
+.head{border-bottom: 1px solid #581845 ;}
+.head a{color: black;}
+h3 {
+letter-spacing: 5px;
+text-transform: uppercase;
+font: 20px "Lato", sans-serif;
+color: #111;
+}
+h5{font-weight:600;}
