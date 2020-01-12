@@ -50,43 +50,25 @@
   </div>
 
     <div class="container">
-      <p class="project-title center">Desktop Application: Diplomacy Game Desktop Application</p>
+      <p class="project-title center">Desktop Application: Diplomacy Game</p>
 	  <p class='center'>Class Project | Spring 2019</p>
       <p class="date-caption center">Feb 2019 - May 2019 | Long Beach, CA </p>
-      <p>image of the final product here ! </p>
-      <h3>OVERVIEW</h3>
-      <p>Diplomacy is a strategic, turned based game that pits players against one another. Players must navigate the tumultuous game map in order to conquer territories and gain a strategic advantage. Diplomacy is ultimately a game of alliances, negotiations,and betrayal. In order to succeed, you must stand alone, but also know how to pick your enemies and allies. Only one player emerges victorious, after having conquered their former friends and enemies. For full documentation and source code, please visit <a href="https://github.com/JessicaHilario/475Diplomacy">github</a>.</p>
-
-      <h3>INTRODUCTION</h3>
-	  <p>The Diplomacy Game is played by seven players which represent the seven "Great Powers of Europe" in the years prior to World War I. Each of Great Power is subdivided into provinces. There are three types: inland, water, and coastal. Only Armies can move on inland provinces and only Fleets are allowed to move on water provinces. There are a total of 34 inland and coastal provinces on the game board and they are designated as supply centers. This game app is part of my software development and framework class project. The project took the whole semester to complete [approximate 14 weeks]. This gaming project was built in reference to the online Dimplomacy desktop application <a href="www.backstabbr.com">Backstabrr</a>.</p>
+      
+	  
+	   <center><img src="../images/diplomacy-startscreen.PNG" width="100%" /></center><br/>
+      <h3>Project Details</h3>
+	  <p>A desktop game application based on one of the popular board games : <i>Diplomacy</i>. This game project was built in the reference to the online Dimplomacy desktop application <a href="www.backstabbr.com">Backstabrr</a>.</p>
+	  
+	  <p>
+	   For full documentation and source code of this project, please visit <a href="https://github.com/JessicaHilario/475Diplomacy">github</a>.</p>
 		
-      <h3>DESIGN PROCESS </h3>
-      <ol>
-        <li><h5>Prototyping:</h5>
-          <p>Our group started the game app prototype by brainstorming the list of features we wanted in the game. Most features were referenced to the online Backstabbr and the orginal Diplomacy game documentation which was given by the professor. After deciding which features should be on the game app, then we had divided the workload. Since one team member and I have had more experience in web design, we were both responsible for the prototype design which was demoed during the fourth week of the semester. The rest of the group started to focus on the backend logic. We started making wireframe using Bootstrap framework and HTML/CSS. The UI design took us about 1 week and got my group one of the top two highest scores during the prototype demo. This interface was good enough for no further modification during the project developement. We spent the rest of the semester focusing on the backend logic of the game.</p>
-         </li>
-		 <li><h5>The Back-end Design </h5></li>
-		 <p>The backend logic was very difficult. All of us has very minimal to none knowledge of JavaScript. We all started learning JavaScript from stratch by ourself using the available resource on the web. One of our most concerned feature was hosting the game. We first thought of using the database, but we did not make much progress. After days of research, we had decided to do the hosting feature through wifi connection. That means, two or more players can join the same game lobby only if they are connecting to the same wifi network. The game full instruction (logic) has not been finished by the project deadline. We have spent most of time on game host and map interaction. </p>
-		 
-        <li><h5>Interactive Map:</h5></li>
-		<p> screenshots of Map</p>
-		<p>Another part of the project that took us long to do was the map interaction. We were given a PNG file of the world war I map image. To make an interactive map, we need to convert this png file to a svg file. My group used inkscape software to convert this png to svg file. For the exact location of each province, we had to trace each province's border by border, it also took a quiet amount of our project time. After each border was traced, we were able to implement the map click feature.</p>
-        
-		<li><h5>Flowchart: Process of the Diplomacy Game Logic</h5></li>
-
-      </ol>
-
-      <h3>IMPLEMENTATION</h3>
-      <h6><span style='font-size:18px'>Tools:</span> Node.JS, Electron and Bootstrap Frameworks, terminal/command line, inkscape software</h6>
-      <h6><span style='font-size:18px'>Language:</span> HTML/CSS, JavaScript</h6>
-
-
-   
-      <p>image of the final product is here </p>
-
-      <p class="project-step">StartScreen</p>
-      <p>This is the first screen that user will see once they start the application.The user has options to either create, join or exit the game application.</p>
-	  <center><img src="../images/diplomacy-startscreen.PNG" width="80%" /></center><br/>
+      <h3>Technology Used: </h3>
+		<ul>
+			<li>HTML/CSS</li>
+			<li>JavaScript</li>
+			<li>Node JS</li>
+			<li>Electron Framework</li>
+		</ul>
 	  
       <p class="project-step">Create Game Screen</p>
       <p>To host the game, first user needs to create the game by entering some info including game name, host name, etc. Once all fields are entered, the game can be created. </p>
@@ -94,16 +76,15 @@
 	  <p class="project-step">Join Game</p>
 	  <p> Players can join the game by using the given wifi-connection by the game host.</p>
 	  <center><img src="../images/diplomacy-join.PNG" width="80%" height="70%"/></center><br/>
-      <p class="project-step">Game Lobby</p>
-	  <p>All current players in the game are listed here. </p>
+    <!--  <p class="project-step">Game Lobby</p>
+	  <p>All current players in the game are listed here. </p> -->
 	  
 	  <p class="project-step">Game Room</p>
 	  <p>This is the main page of the game where users will play the game in. It consists of the interactive map where user can click on each province to make the instruction.</p>
      
       <p class="project-step">Work flow of Diplomacy Desktop Application</p>
 	  <center><img src="../images/diplomacy-flowchart.jpg" width="80%" height="70%"/></center><br/>
-      <h3>REFLECTION</h3>
-	  <p>At the beginning of the semester, everyone in the team knew nothing about JavaScript and only a few of us know web design language such as HTML/CSS. It was a bit tough in the beginning, but things went smooth after a few week of the project.</p>
+   
 	  
      </div>
   </body>

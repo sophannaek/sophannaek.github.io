@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,22 +53,67 @@
     <div class="container">
       <p class="project-title center">GUI Application: Search Engine</p>
 	  <p class="center" style="margin-top:-3em;"> Class Project</p>
-      <p class="date-caption center">September 2019 - Present | Long Beach, CA </p>
-      <h3>OVERVIEW</h3>
+      <p class="date-caption center">September 2019 - December 2019 | Long Beach, CA </p>
+ <!--     <h3>OVERVIEW</h3>
       <p>Search Engine is a Java GUI application where users can search for the phrase query they've entered. The user can select the corpus they would like to search for their queries. </p>
-
-      <h3>INTRODUCTION</h3>
-	  <p>
-      This search engine is an on-going project. It currently reads all the content of each document in the selected corpus and index those words into the index. The index is currently processed on RAM only, but it will be implemented into disk in the future, so the index building process should occurs only once.  
+-->
+      <h3>PROJECT DETAILS</h3>
+	  <p>Java GUI application that utilizes search algorithm. Users can search for queries ( single-term or phrase queries) in the provided corpus. Boolean and ranked query search algoriths were implemented.
       </p>
 
-      <h3>IMPLEMENTATION</h3>
-      <h6>Tools: Eclipse IDE, org.simple Library, Command line</h6>
-      <h6>Language: Java</h6>
+      <h3>Technology Used</h3>
+      <ul>
+		<li>Java GUI</li>
+	  </ul>
 	  
+	  <!--
       <p class="project-step">Work flow of our current search engine data structure</p>
-      <h4><span style="color:red"> This project is still in progress</span></h4>
-    
+      <h4><span style="color:red"> This project is still in progress</span></h4> -->
+	<h3>Implementation</h3>
+	<h4> Search Engine Index Implementation:</h4>
+		<ul>
+			<li>Positional Inverted Index</li>
+			<li>Biword index</li>
+			<li>Disk Index</li>
+			<li>DSP Index</li>
+		</ul>
+	<h4>Query Search Results </h4>
+		<ol>
+			<li>Boolean Query:
+				<ul>
+					<li><p> Phrase Query Search: (query contains more than one token)</p>
+						<p><img src='../images/search.png' width='65%' /></p>
+					</li>
+					<li>
+						<p> Near Query :using "NEAR/K" operator to do query search</p>
+						<p><img src='../images/searchEngine-nearQuery.png' width='65%' /></p>
+					</li>
+					<li>
+						<p> DNF (disjunctive normal form -- "ORs of ANDs") queries </p>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<img src='../images/searchEngine-orQuery.png' width='95%' />
+							</div>
+							<div class='col-sm-6'>
+								<img src='../images/searchEngine-expandedQuery.png' width='100%' />
+							</div>
+						</div>
+						
+						
+					</li>
+
+				</ul>
+
+				
+				
+				
+
+			</li>
+			<li>Ranked Query:
+			</li>
+		</ol>
+		
+		
      </div>
   </body>
   </html>
