@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- when the same character appears multiple times, when the user enters it correctly -->
+<html>
+	<head>
+		<title>Hanging Man</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link href='hangman.css' rel='stylesheet'	/>
+	</head>
+	<body>
+		<div class='container title'>
+			<h4>Welcome to the Hanging Man Game</h4>
+		</div>
+		<div class='container'>
+			<div>
+				<button type='button' id='hint'>Hint</button>
+			</div>
+			<div id='root'>
+			</div>
+			<div class='row'>
+				<div class='col-sm-6 text'>
+					<button type='button' class='btn'>A</button>
+					<button type='button' class='btn'>B</button>
+					<button type='button' class='btn'>C</button>
+					<button type='button' class='btn'>D</button>
+					<button type='button' class='btn'>E</button>
+					<button type='button' class='btn'>F</button>
+					<button type='button' class='btn'>G</button>
+					<button type='button' class='btn'>H</button>
+					<button type='button' class='btn'>I</button>
+					<button type='button' class='btn'>J</button>
+					<button type='button' class='btn'>K</button>
+					<button type='button' class='btn'>L</button>
+					<button type='button' class='btn'>M</button>
+					<button type='button' class='btn'>N</button>
+					<button type='button' class='btn'>O</button>
+					<button type='button' class='btn'>P</button>
+					<button type='button' class='btn'>Q</button>
+					<button type='button' class='btn'>R</button>
+					<button type='button' class='btn'>S</button>
+					<button type='button' class='btn'>T</button>
+					<button type='button' class='btn'>U</button>
+					<button type='button' class='btn'>V</button>
+					<button type='button' class='btn'>W</button>
+					<button type='button' class='btn'>X</button>
+					<button type='button' class='btn'>Y</button>
+					<button type='button' class='btn'>Z</button>
+				</div>
+				<div class='col-sm-6 hanging'>
+					
+					<canvas id='myCanvas' width='200' height='200'></canvas>
+					<div>
+						<button type='button' id='play-again'>Play Again</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src='hangman.js'>
+	</script>
+</html>

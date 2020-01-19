@@ -1,0 +1,59 @@
+input{
+	border:none;
+	border-bottom:1px solid gray;
+	margin-right:0.5em;
+	width: 1.5em;
+	text-align:center;
+}
+.btn{ 
+	border-radius: 100%;
+	color: gray;
+	border: 1px solid gray;
+	width: 3em;
+	height: 3em; 
+	margin: 0.2em 0.2em;
+}
+.btn:hover{
+	color:lightblue;
+	border: 1px solid lightblue;
+}
+.text{
+	margin:5em 0;
+	
+}
+.hanging{
+	<!-- margin-top:10em; -->
+}
+.correct{
+	color:black;
+	border:1px solid green
+	outline:1px solid green;
+	background-color:lightgreen;
+	font-weight: bold;
+}
+.incorrect{
+	color:black;
+	font-weight:bold;
+	background-color:red;
+}
+#play-again{
+	margin-top:3em;
+	border-radius:5px;
+	background-color:#52D0E3;
+	color:gray;
+	display:none;
+}
+#myCanvas{
+	float:right;
+	margin-top:5em;
+}
+#hint{
+	border-radius:80%;
+	background-color:#52D0E3;
+	float:left;
+	margin-top:5em;
+}
+.title{
+	margin-top:3em;
+	color:#2191A2;
+}

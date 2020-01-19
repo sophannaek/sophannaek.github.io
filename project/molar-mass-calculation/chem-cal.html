@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			td,th{
+				border-bottom: 1px solid lightgray;
+				text-align: center
+				
+			}
+			#last_row{
+				colspan:3;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+		<div style='padding: 2em 2em'>
+			<h3>Enter a compound formula to calculate the molar mass</h3>
+			<p>Examples of valid compound formulae: NaCl, Ba(OH)2. </p>
+		</div>
+	</center>
+		<div id='root'>
+			<center><input type='text' onchange='cal()'  id='input'/> <button type='button' id='submit'>submit</button></center>
+		</div>
+		<center><div id='description' style="padding:2em 2em">
+		</div></center>
+	</body>
+	<script src='chem-cal.js'></script>
+
+</html>
