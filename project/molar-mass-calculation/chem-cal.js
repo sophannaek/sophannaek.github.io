@@ -1,6 +1,6 @@
 /**
  ** Author: Sophanna Ek
- ** About chemistry molar mass calculator
+ ** About: Chemistry Molar Mass Calculator
  ** Features: 
  	* molar mass calculation
  	* mass percent calculation
