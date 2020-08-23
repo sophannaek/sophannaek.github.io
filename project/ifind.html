@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>A Web Application</title>
+    <title>iFind</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
       .date-caption{font-size: 10px;color:gray;}
       .project-title{font-size:24px;font-family: 'Quicksand', sans-serif;padding:3em 0em 2em 0em;}
       .center{text-align:center;}
-      .project-step{font-size:20px;color:#581845;}
+	    .project-step{font-size:20px;color:#581845;}
       .head{border-bottom: 1px solid #581845 ;}
       .head a{color: black;}
       h3 {
@@ -23,10 +23,11 @@
         color: #111;
       }
       h5{font-weight:600;}
-      img, video{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);  
+      img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        
       }
-    </style>
+      </style>
   </head>
   <body>
   <div class="head">
@@ -52,42 +53,53 @@
   </div>
   
     <div class="container">
-      <p class="project-title center">A Web Application:  tutorFinder Application</p>
+      <p class="project-title center">A Web Application:  iFinder Application</p>
 	  <p class="center" style="margin-top:-3em;"> Personal Project</p>
-      <p class="date-caption center">Summer 2020 [In Progress] </p>
+      <p class="date-caption center">Summer 2020 </p>
       
       <h3>PROJECT DETAILS</h3>
-      <p><i>tutorFinder</i> is an online platform where students can find help on their homeworks from available tutors and tutors can find
-        their clients. Users can sign up as either tutor or tutee. For an in-progress source code, please see <a href="https://github.com/sophannaek/tutorFinder" target="blank">here</a>.
-        
+      <p><i>iFinder</i> is a platform where users can find places for their favorite food or look for outdoor activities at their target location. 
+        For a complete source code, please see <a target='_blank' href="">here.</a>
       </p>
+  
+      
 
       <h3>TECHNOLOGY USED</h3>
         <ul>
-          <li>JavaScript, ReactJS, Google Firebase</li>
+          <li>JavaScript, ReactJS </li>
+          <li>Yelp API, OpenWeatherMap API</li>
         </ul>
       
 
       <h3>FEATURES </h3>
         <ul>
-          <li>User Registration</li>
-          <li>User Authentication</li>
-          <li>CRUD using records from Firebase (In Progress) </li>
-          <li>Search students/tutors Near By using Google Map API (Planning) </li>
+          <li>Search for places/activities at desired location. </li>
+          <li>See current weather at target location. </li>
         </ul>
 
-       <h3>In-progress work</h3> 
-      
+       <h3>Snapshots of this web application</h3> 
+       <h5>Homepage</h5>
+        <img src='../images/ifind-home.PNG' width="80%" />
+        <br/><br/>
+       
+       <h5>Query page: Food </h5>
 
-       <h5>See the in-progress work</h5>
-       <center><video controls="controls" width="600" height="600" 
-        name="Video Name" src="./demo/tutorFinder.mov" ></video></center>
-
+          <img src='../images/ifind-query.PNG' width="80%" />
+          <br/><br/>
+      <h5>Query page: Hiking Place</h5>
+       <img src='../images/ifind-query1.PNG' width="80%" />
        
 
-        <h5> Inside the Firebase database </h5>
-         <img src='../images/firebase-database.png' width="80%" />
-        <br/><br/>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
      </div>
+
+
+
+
   </body>
   </html>
