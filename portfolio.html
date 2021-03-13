@@ -7,64 +7,79 @@
 	<link rel="stylesheet" href="main.css"/>
 		
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	 
-	   <title>Portfolio</title>
-	   <style>
+	<title>Portfolio</title>
+	<style>
 		.navbar{background-color:white!important;}
 		.navbar a:hover {border-bottom:0.4em solid gray!important; }
 		.active {border-bottom:0.2em solid gray; }
-	   </style>
+	</style>
 	</head>
 	<body>
 	<!-- header --> 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="./index.html">Sophanna Ek</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="./index.html">Sophanna Ek</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" href="index.html#about">ABOUT</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROJECT
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">APPLICATION</a>
-          <a class="dropdown-item" href="#">CHEMICAL ENGINEERING</a>
-       <!--   <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>  -->
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html" target='blank'>BLOG</a>
-      </li>
-    </ul>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+			<a class="nav-link active" href="index.html#about">ABOUT</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			PROJECT
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="#">APPLICATION</a>
+			<a class="dropdown-item" href="#">CHEMICAL ENGINEERING</a>
+		<!--   <div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Something else here</a>  -->
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="index.html#contact">CONTACT</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="blog.html" target='blank'>BLOG</a>
+		</li>
+		</ul>
 
-  </div>
-</nav>
-	
-
-	<!-- list of project --> 
-	<!-- should have 2 kinds of projects -- personal and class projects   -->
+	</div>
+	</nav>
 		
-	<div class="container" style='padding-top:2em'>
-		<div class="row">
+
+		<!-- list of project --> 
+		<!-- should have 2 kinds of projects -- personal and class projects   -->
+		<div class='container' style='padding-top:2em'>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="project-list" >	
+						<img  src="images/blank-image.PNG" alt="Card image cap" >
+						<p class='project-title'><a href="" target='blank'>Deep Learning Research (IP)</a></p>		
+					</div>
+				
+			</div>
+			<div class="col-sm-4">
+				<div class="project-list" >	
+					<img  src="images/blank-image.PNG" alt="Card image cap" >
+					<p class='project-title'><a href="" target='blank'>Twitter Spam Classifier(IP)</a></p>		
+				</div>
+			</div>
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="images/blank-image.PNG" alt="Card image cap" >
 					<p class='project-title'><a href="project/ifind.html" target='blank'>iFind Web Application</a></p>		
 				  </div>
+			</div>	
+	</div>
+		
+		<div class="row">
 			
-			</div>
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="images/blank-image.PNG" alt="Card image cap" >
@@ -78,18 +93,16 @@
 					<p class='project-title'><a href="project/bugHound.html" target="blank">BugHound Report</a></p>		
 				  </div>
 			</div>
-			
-				
-			
-			
-		</div>
-		<div class='row'>
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="images/blank-image.PNG" alt="Card image cap"  >
 					<p class='project-title'><a href="project/periodicTableIndex.html" target="blank">Periodic Table</a></p>		
 				  </div>
 			</div>
+			
+		</div>
+		<div class='row'>
+			
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="https://blog.mozilla.org/firefox/files/2017/10/FX57_BLOG_US_BROWSER_1380x750_Revised.jpg" alt="Card image cap" >
@@ -105,21 +118,15 @@
 				
 			</div>
 			
-			
-				
-				
-				
-				
-				
-		</div>
-		<div class='row'>
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="images/blank-image.PNG" alt="Card image cap" >
 					<p class='project-title'><a href="project/timeUtility/alarm-ui.html" target='blank'>Time Utility</a></p>		
-				</div>
-				
-			</div>
+				</div>	
+			</div>	
+		</div>
+		<div class='row'>
+			
 			<div class="col-sm-4">
 				<div class="project-list" >	
 					<img  src="images/diplomacy-firstPage.PNG" alt="Card image cap"  >
@@ -132,19 +139,11 @@
 				<div class="project-list" >	
 					<img  src="images/blank-image.PNG" alt="Card image cap" >
 					<p class='project-title'><a href="project/POS.html" target='blank'>POS:Point of Sale</a></p>		
-				  </div>
-			
+				  </div>			
 			</div>
-			
-
 		
-		</div>
-
-		
+		</div>	
 	</div>
-	
-
-	
 	
 	
 	</body>
