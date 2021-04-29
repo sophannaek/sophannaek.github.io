@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Twitter Hate Speech Classifier </title>
+    <title>Twitter Sentiment Analysis </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,45 +53,165 @@
   </div>
   
     <div class="container">
-      <p class="project-title center"> Hate Speech Classifier</p>
+      <p class="project-title center">Sentiment Analysis of Long-term of Social Data during the COVID-19 Pandemic  </p>
 	  <p class="center" style="margin-top:-3em;"> Directed Research Project</p>
-      <p class="date-caption center">In Progres </p>
+      <p class="date-caption center"> Spring 2021 </p>
       
       <h3>PROJECT DETAILS</h3>
-      <p><i>Hate speech classifier</i> is a directed research project which focus on social media content on the controversial topics: hate speech 
-        during the covid-19 pandemic. It was directed under Prof. Hailu at CSU, Long Beach. 
-        For a complete source code, please see <a target='blank' href="">here.</a>
+      <p><i><b>Social Network Sentimental Analysis</b></i> is a directed research project which focus on the sentiment of long-term social media content
+        during the covid-19 pandemic. The project was directed under Prof. Hailu Xu at CSU, Long Beach. 
+        <!-- For a complete source code, please see <a target='blank' href="">here.</a> -->
       </p>
+      <hr/>
+      <h3>ACHIEVEMENT</h3>
+      <p> This research paper is accepted for publication in the <b>Springer Nature - Research Book Series:
+        Transactions on Computational Science & Computational Intelligence</b>. It is scheduled to be published soon after the 22nd 
+        International Conference on Internet Computing & IoT (ICOMP'21), which will take place in July 26-29, 2021, USA.
+
+        <p>PAPER ID #: <b><i>ICM4216</i></b></p>
+        <p>TITLE OF PAPER/ARTICLE: <b><i>Sentiment Analysis of Long-term Social Data during the COVID-19 Pandemic
+          Sophanna Ek, Marco Curci, Xiaokun Yang, Beiyu Lin, Hailu Xu</i></b>
+    </p>
+      </p>
+     
+
+      <hr/>
+      <h3>Overview</h3>
+      <p>The global outbreak of COVID-19 pandemic has changed and disrupted the human's lives in the past year.
+        By March 2020, the deadly virus has been spread to 223 countries, and reached to 119 million cases and 
+      more than 2 million deaths. Despite the spreading of real virus worldwie, social medias, plays an important
+     key as means to recieve and post news information in the daily updates. </p>
+     <p>Social networks show strong emotional reactions towards the pandemic in the past year. During 
+       the pandemic, a large number of social posts related to rumors, hate speech, racist conspiracy, and 
+       negative sentiments had quickly proliferated on the social networks. In this research work, 
+       we've studied the sentiment analysis specifically on Twitter social network data. For a full research work, 
+       please see <a target='blank' href="https://github.com/sophannaek/COVID19_Tweet_Sentiment_Analysis">here.</a>
+     </p>
   
       
-
-      <h3>TECHNOLOGY USED</h3>
+      
+      <h3>IMPLEMENTATION</h3>
         <ul>
-          <li>Twitter API, Python Libaries </li>
+          <li>Twitter API, TextBlob, and Panda Libaries </li>
         </ul>
       
 
       <h3>FEATURES </h3>
         <ul>
           <li>Data Collection and Processing </li>
-          <li>Data Analyst</li>
-          <li>Classifier using supervised machine learning algorithm</li>
+          <li>Analysis Methods</li>
+          <li>Sentiment Analysis</li>
+          <li>Tweet Gender Classification using supervised machine learning algorithm</li>
         </ul>
 
        <h3>Data Collection</h3> 
-       <p>The data collection was done by using the Tweepy API with the access token from Twitter </p>
+       <p>The data collection was done by using the Tweepy API with the access token from Twitter. 
+         The tweets selection was filtered by using the relevant keywords including "covid-19" and "vaccine"
+         or any hashtags such as "#covid-19" or "#coronavirus". The data was collected on weekly basis from the 
+         1st - 7th, 8th -14th, 15th - 21st and 22nd - 28th/30th periods for 12 months. The volume of the weekly
+          collection was varied between 25,000 to 35,000. The total collected tweets up to approximately <b>1,300,000 tweets</b> from February 2020 to February 2021.
+       </p>
+       <p></p>
+       <hr/>
+
        <h3>Data Processing</h3> 
-       <h3>Data Analysis</h3> 
+       <p>We performed the data preprocessing on each data instance before performing the data analysis. All collected tweets had
+        been preprocessed in the following order: 
+          <ol>
+            <li>Each tweet content is extracted by removing url link, user references, punctuations and hashtags symbol </li>
+            <li>Then extracted text was then tokenized and have common English stop words removed.</li>
+            <li>The cleaned text was then applied the stemming process using Porter Stemmer to remove the morphological affixes 
+              from words and leaves only the word stem for our analysis.</li>
+            <li>The text was then applied the lemmatization to keep the word to its meaningful base form. We also use the stop words, Porter Stemmer, and Lemmatization from the
+              NLTK Library (Natural Language Toolkit) in python for the data processing.</li>
+
+          </ol>
+       </p>
+       <h3>Analysis methods</h3> 
+        <ol>
+          <li><b><i>TF-IDF: </i></b></li>
+          <p>TF-IDF method was used to find more important topics from the collected tweet data using the TF-IDF score. Instead of giving every word with equal importance, 
+            TF-IDF gives more importance to the words that occur more frequently in one document and less frequently in other documents.
+             TF-IDF score is determined by conducting the word’s term frequency and its inverse document frequency. TfidfVectorizer in sklearn python library
+              was used to learn the pre-processed tweet data and score each term appear in the tweet corpus.</p>
+
+          <li><b><i>Sentiment Analysis</i></b></li>
+          <p>The sentiment analysis is performed on the same pre-processed tweet dataset. TextBlob [5] is a python library that can perform the common natural language process 
+            tasks such as sentiment analysis, classification, noun phrase extraction, and more. It assigns individual scores to all the words, then takes an average of all the sentiments 
+            to calculate the final sentiment. It takes the pre-processed tweet content and gives the polarity score which is used to determine the sentiment of the tweet data. 
+            The score is range from -1 to 1. The content is said to be negative if the polarity score is less than 0, positive if it is greater than 0, and neutral if it is equal to 0</p>
+        </ol>
+
+        
+       <h3>Analysis Result</h3>
+        <p>we perform the sentiment analysis with the collected data and investigate the sentiment patterns of content-level, political and social cognitive attributes.
+          We provide perspectives on social data in three categories: vaccine-related, politic-related, and economic-related. Besides, we explore the differences of views among gender effects.</p>
+          <p>
+          <ul>
+            <li>Using the TF-IDF method to analyze the frequency of various keywords among all the collected tweets.
+              The top 6 keywords are shown in the figure 1 below.
+              <center><img src="../images/sentiment_figure1.png" /></center><br/><br/>
+            </li>
+
+
+            <li>
+              <p>To understand the sentiment tweets, we study three key topics that refer to: 
+                <ol>
+                  <li>economic during the pandemic,</li>
+                  <li>political discussion related to the U.S presidential election,</li>
+                  <li>the procedure of mRNA vaccines</li>
+                </ol>
+              </p>
+              <p> The tweet is defined to be <b>vaccine relevant</b> if it contains any words of the name of vaccine 
+                company, and keywords such as "vaccine", "vaccine distribution","mutation", "injection", "mRNA", etc. 
+                The <b>economy revelvant</b> tweet can be classified if it contains "job", "nasdaq","economy", "stock", "S&P500", "stimulus",
+                and "opening". Tweets refer to <b>politics </b>can be identified if it contains ‘election’, ‘political’, ‘campaign’, ‘elected’, 
+                ‘politics’, and the name of candidates.
+              </p>
+              <p>Next, we investigate the attitudes of users during the pandemic, where we separate the tweets into three categories according to Bayes classification: positive, negative, and neutral.
+                Figure 2 displays the trends of three categories over a 12-month period, where each data point presents the topics within a single week.</p>
+                
+              <!-- <div class="row">
+                <div class="col-sm-4">
+                  <img src="../images/sentiment_figure2.png" />
+                </div>
+                <div class="col-sm-4">
+                  <img src="../images/sentiment_figure3.png" />
+                </div>
+              </div> -->
+              <center><img src="../images/sentiment_figure2.png" /></center><br/><br/>
+
+
+            </li>
+            <li>
+              <p>Figure 4 shows the distribution of negative, positive, and neutral tweets during the 12 months’ period of time. We can observe that the negative tweets have the highest volume 
+                at the beginning of the pandemic and decline with the time.</p>
+                <center><img src="../images/sentiment_figure3.png" /></center><br/><br/>
+
+            </li>
+
+            <li>
+              <p>Next, we analyze the attitudes of users for tweets that relate to vaccine and genders. Demographic data such as gender and age are not available from the Twitter API due to the 
+                restriction of its users’ privacy rule, therefore we identify Twitter users’ gender by using the gender classifi- cation based on tweet content. The gender classification was
+                 trained with available training dataset on Kaggle [1] by using the multinomial Na ̈ıve Bayes classifier [21] in Sklearn library. To better train the classifier, 
+                 only data with 99% gender- confidence were chosen to include in our data set. </p>
+                 <p>Figure 5 shows the attitudes among different genders. </p>
+                 <center><img src="../images/sentiment_figure5.png" /></center><br/><br/>
+            </li>
+          </ul>
        
-       <h3>Classifier</h3>
-       <h5>Model</h5>
-       <p> Use deep neural network to train and build the model. Tune hyperparamter for higher accuracy rate.</p>
-    
-       <h5>Training Set</h5>
-       <p>Use the available training dataset from...</p>
-       <h5>Testing Set</h5>
-       <h5>Deploy</h5>
-       <p>Deploy to Google cloud platform for public use.</p>
+          </p>
+        
+
+      <h3>Conclusion</h3>
+      <p>In this work, we conduct a long-term analysis of social posts that related to COVID-19 within 12 months. We analyze the collected social data in three categories: vaccines, politics, and economics
+         and analyze the sentiment attitudes of tweets from various perspectives. Our analysis shows that negative tweets occupy an important position during the pandemic and decline with the development of vaccines. 
+         Besides, the evolution of various topics tightly follow the hot discussions on economics, politics, and vaccines.</p>
+
+      <h3>Future Work</h3>
+      <p>we will analyze the tweets by targeting on deeper and more comprehensive perspectives. We will continue to explore the variances among different topics and show the roles that genders feeds back at different stages of the ”infodemic”. 
+        Besides, we will characterize sentiment patterns to extend the understanding of the impacts of online social ”infodemic”.</p>
+  
        
     
        

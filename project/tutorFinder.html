@@ -54,17 +54,17 @@
     <div class="container">
       <p class="project-title center">A Web Application:  tutorFinder Application</p>
 	  <p class="center" style="margin-top:-3em;"> Personal Project</p>
-      <p class="date-caption center">Summer 2020 [In Progress] </p>
+      <p class="date-caption center"> </p>
       
       <h3>PROJECT DETAILS</h3>
-      <p><i>tutorFinder</i> is an online platform where students can find help on their homeworks from available tutors and tutors can find
+      <p><i><b>tutorFinder</b></i> is an online platform where students can find help on their homeworks from available tutors and tutors can find
         their clients. Users can sign up as either tutor or tutee. For an in-progress source code, please see <a href="https://github.com/sophannaek/tutorFinder" target="blank">here</a>.
         
       </p>
 
       <h3>TECHNOLOGY USED</h3>
         <ul>
-          <li>JavaScript, ReactJS, Google Firebase</li>
+          <li>JavaScript, ReactJS, Bootstrap, Google Firebase API</li>
         </ul>
       
 
@@ -74,12 +74,22 @@
           <li>User Authentication</li>
           <li>CRUD using records from Firebase (In Progress) </li>
           <li>Search students/tutors Near By using Google Map API (Planning) </li>
+          <li>Cloud Host on GCP (Planning)</li>
         </ul>
 
-       <h3>In-progress work</h3> 
+        <h3>Front-End: </h3>
+        <p> For UI and UX of the application, I use React JS and Bootstrap frameworks. </p>
+
+        <h3>Back-End: </h3>
+        <p>A NodeJS back-end was written to handle all of the endpoints we needed for our application. These endpoints accessed the 
+          real-time database through Google Firebase API: Firestore and Storage. The completed endpoints including, user login,
+           user logout, user registration, updating user information, uploading profile image, adding a new job post, and pulling a list of tutors/students and job posts .
+        </p>
+        
+       <!-- <h3>Snapshot of the in-progress work</h3>  -->
       
 
-       <h5>See the in-progress work</h5>
+       <h3>See the in-progress work</h3>
        <center><video controls="controls" width="600" height="600" 
         name="Video Name" src="./demo/tutorFinder.mov" ></video></center>
 
