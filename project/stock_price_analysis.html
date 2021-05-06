@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Analysis Application</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <style>
+      body{background-color:#F8F8F2;}
+      .date-caption{font-size: 10px;color:gray;}
+      .project-title{font-size:24px;font-family: 'Quicksand', sans-serif;padding:3em 0em 2em 0em;}
+      .center{text-align:center;}
+      .project-step{font-size:20px;color:#581845;}
+      .head{border-bottom: 1px solid #581845 ;}
+      .head a{color: black;}
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+      h5{font-weight:600;}
+      img, video{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);  
+      }
+    </style>
+  </head>
+  <body>
+  <div class="head">
+	  <nav class="navbar fixed-bottom navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="../portfolio.html" id="brand">SOPHANNA EK</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about">ABOUT</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="../portfolio.html">PORTFOLIO <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../portfolio.html">APPLICATION</a></li>
+							<li><a href="#">CHEMICAL ENGINEERING</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact.html">CONTACT</a></li>
+					<li><a href="../blog.html" target="blank">BLOG</a></li>
+				</ul>
+			  </div>
+			</nav>
+  </div>
+  
+    <div class="container">
+      <p class="project-title center">A Web Application: Stock Prices Analysis</p>
+	  <p class="center" style="margin-top:-3em;"> Personal Project</p>
+      <p class="date-caption center">In Progress</p>
+      
+      <h3>PROJECT DETAILS</h3>
+      <p>This <b>stock price analysis</b> is a small web application that can be used to compare stock price performances 
+        for selected companies. It also provides a stock price prediction based on its last 60 days closing prices.
+        I came up with this project idea when I started to get interested in the stock market and wanted to learn more about the companies 
+        that I want to invest in. After doing many study and research on stock performances, 
+        I've learnt that the stock price of each company does not depend only on the company's value but it can be changed drastically in response to news, public rumors spreading as well as the economic 
+        performances. For a source code, please see <a href="https://github.com/sophannaek/stock_price_prediction" target="blank">here</a>.
+        
+      </p>
+
+      <h3>FRONT-END</h3>
+      <p>For UI and UX of the application, I used <a href="https://streamlit.io">streamlit</a> which is a very lightweight web app api building web application quickly.
+        Another reason to use streamlit for this project is that it works really well with data analaysis and machine learning. </p>
+        <h3>Back-End</h3>
+        <p>This project uses the free <b>Yahoo Finance api</b> to obtain stock data and use the LSTM neural network to train the data and 
+        predict the stock value based on its last 60-day price performances.</p>
+      
+        <h4>Architecture of LSTM Neural Network</h4>
+        <p>draw an figure of the architecture </p>
+      
+
+      <h3>FEATURES </h3>
+        <ul>
+          <li>Stock Price Comparison</li>
+          <li>Stock Price Prediction </li>
+    
+        </ul>
+        
+      
+
+       <h3>Snapshot of the application</h3>
+      
+
+
+        <h4>Homepage</h4>
+         <img src='../images/stock_1.png' width="80%" />
+         <br/><br/>
+
+         <h4>A Closer Look to Each Company's Performance</h4>
+         <img src='../images/stock_2.png' width='80%' />
+
+        <br/><br/>
+        <h4>Stock Price Comparison between Two Companies</h4>
+        <img src='../images/stock_3.png' width='80%' />
+
+        <br/><br/>
+     </div>
+  </body>
+  </html>
