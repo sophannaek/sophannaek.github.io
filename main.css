@@ -92,6 +92,11 @@ h4 {
 .project-list{
   margin-top:5%;
   position:relative;
+  display:none;
+  float:left; 
+  width:20em;
+  /* height: 25em; */
+  margin:1em;
 }
 .project-title{
 	border-width:50%;
@@ -157,3 +162,28 @@ h4 {
     background-attachment: scroll;
   }
 }
+
+
+.show {
+  display: block;
+}
+
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+

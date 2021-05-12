@@ -35,8 +35,8 @@
 			PROJECT
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="#">APPLICATION</a>
-			<a class="dropdown-item" href="#">CHEMICAL ENGINEERING</a>
+			<a class="dropdown-item" href="#">Full Stack APPLICATION</a>
+			<a class="dropdown-item" href="#">Machine Learning/AI</a>
 		<!--   <div class="dropdown-divider"></div>
 			<a class="dropdown-item" href="#">Something else here</a>  -->
 			</div>
@@ -51,96 +51,120 @@
 
 	</div>
 	</nav>
-		
+
 
 		<!-- list of project --> 
-		<!-- should have 2 kinds of projects -- personal and class projects   -->
+		<div class='container' id ="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')">All Projects</button>
+			<button class="btn" onclick="filterSelection('fullstack')">Full Stack</button>
+			<button class="btn" onclick="filterSelection('machinelearning')">Machine Learning</button>
+		</div>
 		<div class='container' style='padding-top:2em'>
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="project-list" >	
-						<img  src="images/blank-image.PNG" alt="Card image cap" >
-						<p class='project-title'><a href="project/stock_price_analysis.html" target='blank'>Stock Price Prediction</a></p>		
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="project-list" >	
-						<img  src="images/blank-image.PNG" alt="Card image cap" >
-						<p class='project-title'><a href="project/twitter_research.html" target='blank'>Twitter Sentiment Analysis during COVID-19</a></p>		
-					</div>
-				</div>
-			
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap" >
-					<p class='project-title'><a href="project/tutorFinder.html" target='blank'>tutorFinder Application</a></p>		
-				  </div>
-			
+			<div class="project-list machinelearning" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/stock_price_analysis.html" target='blank'>Stock Price Prediction</a></p>		
 			</div>
-	</div>
+			<div class="project-list machinelearning">	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/twitter_research.html" target='blank'>Twitter Sentiment Analysis during COVID-19</a></p>		
+			</div>
 		
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap" >
-					<p class='project-title'><a href="project/ifind.html" target='blank'>iFind Web Application</a></p>		
-				  </div>
-			</div>	
-			
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap"  >
-					<p class='project-title'><a href="project/bugHound.html" target="blank">BugHound Report</a></p>		
-				  </div>
+			<div class="project-list fullstack" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/tutorFinder.html" target='blank'>tutorFinder Application</a></p>		
 			</div>
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap"  >
-					<p class='project-title'><a href="project/periodicTableIndex.html" target="blank">Periodic Table</a></p>		
-				  </div>
-			</div>
-			
-			
-		</div>
-		<div class='row'>
-			
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="https://blog.mozilla.org/firefox/files/2017/10/FX57_BLOG_US_BROWSER_1380x750_Revised.jpg" alt="Card image cap" >
-					<p class='project-title'><a href="project/searchEngine.html" target='blank'>Search Engine</a></p>		
-				  </div>
-			
-			</div>
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap" >
-					<p class='project-title'><a href="project/hangman/hangman.html" target='blank'>Hanging Man</a></p>		
-				</div>
-				
-			</div>
-			
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/blank-image.PNG" alt="Card image cap" >
-					<p class='project-title'><a href="project/timeUtility/alarm-ui.html" target='blank'>Time Utility</a></p>		
-				</div>	
-			</div>	
-			
 
-		</div>
-		
-		<div class='row'>
-			<div class="col-sm-4">
-				<div class="project-list" >	
-					<img  src="images/diplomacy-firstPage.PNG" alt="Card image cap"  >
-					<p class='project-title'><a href="project/diplomacy.html" target='blank'>Diplomacy Web App</a></p>		
-				  </div>			
+			<div class="project-list fullstack" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/ifind.html" target='blank'>iFind Web Application</a></p>		
+			</div>
+			<div class="project-list fullstack" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap"  >
+				<p class='project-title'><a href="project/bugHound.html" target="blank">BugHound Report</a></p>		
+			</div>
+
+			<div class="project-list fullstack" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap"  >
+				<p class='project-title'><a href="project/periodicTableIndex.html" target="blank">Periodic Table</a></p>		
+			</div>
+			<div class="project-list fullstack" >	
+				<img  src="https://blog.mozilla.org/firefox/files/2017/10/FX57_BLOG_US_BROWSER_1380x750_Revised.jpg" alt="Card image cap" >
+				<p class='project-title'><a href="project/searchEngine.html" target='blank'>Search Engine</a></p>		
+				</div>
+	
+			<div class="project-list fullstack">	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/hangman/hangman.html" target='blank'>Hanging Man</a></p>		
+			</div>
+			
+			<div class="project-list fullstack" >	
+				<img  src="images/blank-image.PNG" alt="Card image cap" >
+				<p class='project-title'><a href="project/timeUtility/alarm-ui.html" target='blank'>Time Utility</a></p>		
+			</div>	
+			<div class="project-list fullstack" >	
+				<img  src="images/diplomacy-firstPage.PNG" alt="diplomacy-app"  >
+				<p class='project-title'><a href="project/diplomacy.html" target='blank'>Diplomacy Web App</a></p>		
+				</div>			
 			</div>
 		
 		</div>	
-	</div>
+
 	
+	<script>
+		filterSelection("all")
+		function filterSelection(c){
+			var x, i; 
+			x = document.getElementsByClassName("project-list");
+			if (c == "all") c = "";
+			for (i =0; i< x. length; i++){
+				removeClass(x[i], "show");
+				if(x[i].className.indexOf(c) > -1){
+					addClass(x[i], "show");
+				}
+			}
+		}
+
+		function removeClass(element, name){
+			var i, arr1, arr2; 
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				arr1.splice(arr1.indexOf(arr2[i]), 1); 
+				}
+			}
+  			element.className = arr1.join(" ");
+		}
+
+		function addClass(element, name){
+			var i, arr1, arr2; 
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {
+				element.className += " " + arr2[i];
+				}
+			}
+		}
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function(){
+				var current = btnContainer.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+		});
+		}
+
+
+	</script>
 	
 	</body>
 </html>
+
+
+
+
+
